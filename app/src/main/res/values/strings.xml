@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlbertTest</string>
+    <string name="tab_text_1">Search</string>
+    <string name="tab_text_2">Wish list</string>
+    <string name="thumbnail">thumbnail</string>
+
+</resources>

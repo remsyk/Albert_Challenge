@@ -5,6 +5,9 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'realm-android'
 
 android {
+    dataBinding {
+        enabled = true
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.alberttest"
@@ -69,5 +72,6 @@ dependencies {
     annotationProcessor "io.realm:realm-annotations:5.4.1"
     annotationProcessor "io.realm:realm-annotations-processor:0.87.4"
 
+    
 
 }

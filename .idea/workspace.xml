@@ -136,28 +136,86 @@
     <last-search-timestamp>1559436386652</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c131ba7-6f22-4342-8da0-6d104406f0f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/RealmApp.kt" afterDir="false" />
+    <list default="true" id="1c131ba7-6f22-4342-8da0-6d104406f0f6" name="Default Changelist" comment="renamed main package and i think i fixed the realm dependancy issue">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_adapters_3_4_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_baseLibrary_3_4_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_library_3_4_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_getkeepsafe_relinker_relinker_1_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_realm_realm_android_kotlin_extensions_5_4_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_realm_realm_android_library_5_4_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_realm_realm_annotations_5_4_1_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_extensions_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_extensions_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_realm_realm_android_library_0_88_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_realm_realm_annotations_0_88_3_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/alberttest/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/albert_challenge/ExampleInstrumentedTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookInterface.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookRealmObject.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookRealmObject.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/FavoritesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/FavoritesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/BookInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/BookInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/RecyclerItemClickListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/RecyclerItemClickListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/adapter/RecyclerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/adapter/RecyclerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/io/retrofit/ApiHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/io/retrofit/ApiHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/io/retrofit/OpenLibraryService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/io/retrofit/OpenLibraryService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/io/retrofit/RetrofitFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/io/retrofit/RetrofitFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/model/APIResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/model/APIResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/model/JSONData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/model/JSONData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookRealmObject.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookRealmObject.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/RealmApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/RealmApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SearchFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SearchPageModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SearchPageModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SectionsPagerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SectionsPagerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/WishListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/WishListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/book_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/book_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/alberttest/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/albert_challenge/ExampleUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,29 +240,52 @@
     <favorites_list name="AlbetTest2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34845084">
+    <splitter split-orientation="horizontal" split-proportion="0.38661876">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/WishListFragment.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="51" selection-start-line="51" selection-end-line="51" />
+                <state relative-caret-position="468">
+                  <caret line="92" selection-start-line="92" selection-end-line="92" />
                   <folding>
-                    <element signature="e#38#88#0" expanded="true" />
-                    <element signature="e#299#554#0" />
-                    <element signature="e#614#919#0" />
-                    <element signature="e#982#1229#0" />
-                    <element signature="e#1289#1376#0" />
-                    <element signature="e#1418#1487#0" />
-                    <element signature="e#1540#1602#0" />
+                    <element signature="e#1387#1914#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookRealmObject.kt">
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SearchFragment.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="573">
+                  <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#3191#3590#0" />
+                    <element signature="e#3615#4196#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookModel.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="451">
+                  <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+                  <folding>
+                    <element signature="e#38#88#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookRealmObject.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
                   <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
@@ -215,39 +296,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookInterface.kt">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/RealmApp.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+                <state relative-caret-position="180">
+                  <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/FavoritesFragment.kt">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#1104#1177#0" />
-                    <element signature="e#1434#1793#0" />
-                    <element signature="e#1906#2048#0" />
-                    <element signature="e#2102#2283#0" />
-                    <element signature="e#2552#2778#0" />
-                    <element signature="e#2953#3540#0" />
-                    <element signature="e#2963#3073#0" />
-                    <element signature="e#3147#3254#0" />
-                    <element signature="e#3337#3534#0" />
-                    <element signature="e#3384#3524#2" />
-                    <element signature="e#3429#3510#2" />
-                  </folding>
+                <state relative-caret-position="105">
+                  <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
                 </state>
               </provider>
+              <provider editor-type-id="android-manifest" />
             </entry>
           </file>
         </leaf>
@@ -274,6 +339,9 @@
       <find>author</find>
       <find>seed</find>
       <find>student</find>
+      <find>remove</find>
+      <find>delete</find>
+      <find>bind</find>
     </findStrings>
     <replaceStrings>
       <replace>book</replace>
@@ -318,16 +386,18 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/PlaceholderFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/favorite_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SectionsPagerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SearchFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/RealmApp.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookInterface.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookRealmObject.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/FavoritesFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/WishListFragment.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SearchFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/RealmApp.kt" />
       </list>
     </option>
   </component>
@@ -355,24 +425,25 @@
             <path>
               <item name="Albert_Challenge" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="Albert_Challenge" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="Albert_Challenge" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="alberttest" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="albert_challenge" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="Albert_Challenge" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="alberttest" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="albert_challenge" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="realm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Albert_Challenge" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -507,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559542456027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Realm not working because of some dependancy issue, this is just a check in, incase something gets messed up">
+      <created>1559588857582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559588857582</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -532,7 +610,7 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Find" order="0" sideWeight="0.49499285" weight="0.33734939" />
+      <window_info active="true" anchor="bottom" id="Find" order="0" sideWeight="0.49499285" visible="true" weight="0.33663365" />
       <window_info anchor="bottom" id="Run" order="1" sideWeight="0.4988086" weight="0.32970297" />
       <window_info anchor="bottom" id="Logcat" order="2" sideWeight="0.9055794" weight="0.6782178" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4992057" weight="0.32970297" />
@@ -540,7 +618,7 @@
       <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.4988086" weight="0.32970297" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.35622317" side_tool="true" weight="0.35783133" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Build" order="8" sideWeight="0.64377683" visible="true" weight="0.16732673" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.64377683" weight="0.23960397" />
       <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.4059406" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -622,16 +700,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Split the fragment views for the tabs and started implementing realm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Split the fragment views for the tabs and started implementing realm" />
+    <MESSAGE value="Realm not working because of some dependancy issue, this is just a check in, incase something gets messed up" />
+    <MESSAGE value="renamed main package and i think i fixed the realm dependancy issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed main package and i think i fixed the realm dependancy issue" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/com/android/internal/os/LoggingPrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="293" selection-start-line="293" selection-end-line="293" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/ContextThemeWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -739,7 +812,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/model/Book.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/model/APIResponse.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/model/APIResponse.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
@@ -773,7 +846,7 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/RecyclerItemClickListener.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/RecyclerItemClickListener.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
@@ -788,14 +861,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/io/retrofit/OpenLibraryService.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/io/retrofit/OpenLibraryService.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/io/retrofit/RetrofitFactory.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/io/retrofit/RetrofitFactory.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
@@ -810,14 +883,14 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/model/JSONData.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/model/JSONData.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="76" column="25" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/io/retrofit/ApiHandler.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/io/retrofit/ApiHandler.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
@@ -845,7 +918,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SearchPageModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SearchPageModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
@@ -860,7 +933,7 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/favorite_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wish_list_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
@@ -868,22 +941,14 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SectionsPagerAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SectionsPagerAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
@@ -901,26 +966,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/SearchFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
-          <folding>
-            <element signature="e#1419#1492#0" />
-            <element signature="e#3008#3607#0" />
-            <element signature="e#2302#2701#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/adapter/RecyclerAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/adapter/RecyclerAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/BookInfo.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/BookInfo.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="32" column="87" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="87" />
@@ -930,51 +983,348 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookInterface.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookInterface.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/RealmApp.kt">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        <state relative-caret-position="571">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookModel.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.87.4/b6dbd7580259c289794079722898056ecf1353b1/realm-android-0.87.4-sources.jar!/io/realm/RealmQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="-219">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
           <folding>
-            <element signature="e#38#88#0" expanded="true" />
-            <element signature="e#299#554#0" />
-            <element signature="e#614#919#0" />
-            <element signature="e#982#1229#0" />
-            <element signature="e#1289#1376#0" />
-            <element signature="e#1418#1487#0" />
-            <element signature="e#1540#1602#0" />
+            <element signature="docComment;class#RealmQuery#0" />
+            <element signature="e#2619#2923#0" />
+            <element signature="e#2619#3076#0" />
+            <element signature="e#3082#3403#0" />
+            <element signature="e#3082#3576#0" />
+            <element signature="e#3582#3872#0" />
+            <element signature="e#3582#4246#0" />
+            <element signature="e#4063#4150#1" />
+            <element signature="e#4156#4240#1" />
+            <element signature="e#4252#4528#0" />
+            <element signature="e#4252#4871#0" />
+            <element signature="e#4693#4774#1" />
+            <element signature="e#4780#4865#1" />
+            <element signature="e#4877#5146#0" />
+            <element signature="e#5152#5480#0" />
+            <element signature="e#5486#5773#0" />
+            <element signature="e#5779#6040#0" />
+            <element signature="e#6046#6368#0" />
+            <element signature="e#6374#6675#0" />
+            <element signature="e#6681#6970#0" />
+            <element signature="e#6681#7229#0" />
+            <element signature="e#7049#7086#1" />
+            <element signature="e#7114#7163#1" />
+            <element signature="e#7235#7824#0" />
+            <element signature="e#7235#8084#0" />
+            <element signature="e#8090#8383#0" />
+            <element signature="e#8090#8649#0" />
+            <element signature="e#8669#8950#0" />
+            <element signature="e#8669#9086#0" />
+            <element signature="e#9092#9503#0" />
+            <element signature="e#9092#9758#0" />
+            <element signature="e#9764#10045#0" />
+            <element signature="e#9764#10384#0" />
+            <element signature="e#10229#10286#1" />
+            <element signature="e#10292#10357#1" />
+            <element signature="e#10390#10671#0" />
+            <element signature="e#10390#11011#0" />
+            <element signature="e#10856#10913#1" />
+            <element signature="e#10919#10984#1" />
+            <element signature="e#11017#11298#0" />
+            <element signature="e#11017#11640#0" />
+            <element signature="e#11485#11542#1" />
+            <element signature="e#11548#11613#1" />
+            <element signature="e#11646#11927#0" />
+            <element signature="e#11646#12266#0" />
+            <element signature="e#12111#12168#1" />
+            <element signature="e#12174#12239#1" />
+            <element signature="e#12271#12552#0" />
+            <element signature="e#12271#12892#0" />
+            <element signature="e#12737#12794#1" />
+            <element signature="e#12800#12865#1" />
+            <element signature="e#12898#13179#0" />
+            <element signature="e#12898#13517#0" />
+            <element signature="e#13362#13419#1" />
+            <element signature="e#13425#13490#1" />
+            <element signature="e#13523#13804#0" />
+            <element signature="e#13523#14146#0" />
+            <element signature="e#13991#14048#1" />
+            <element signature="e#14054#14119#1" />
+            <element signature="e#14152#14433#0" />
+            <element signature="e#14152#14663#0" />
+            <element signature="e#14687#14972#0" />
+            <element signature="e#14687#15114#0" />
+            <element signature="e#15120#15524#0" />
+            <element signature="e#15120#15963#0" />
+            <element signature="e#15758#15875#1" />
+            <element signature="e#15969#16254#0" />
+            <element signature="e#15969#16602#0" />
+            <element signature="e#16441#16501#1" />
+            <element signature="e#16507#16575#1" />
+            <element signature="e#16608#16893#0" />
+            <element signature="e#16608#17242#0" />
+            <element signature="e#17081#17141#1" />
+            <element signature="e#17147#17215#1" />
+            <element signature="e#17248#17533#0" />
+            <element signature="e#17248#17884#0" />
+            <element signature="e#17723#17783#1" />
+            <element signature="e#17789#17857#1" />
+            <element signature="e#17890#18174#0" />
+            <element signature="e#17890#18522#0" />
+            <element signature="e#18361#18421#1" />
+            <element signature="e#18427#18495#1" />
+            <element signature="e#18528#18813#0" />
+            <element signature="e#18528#19162#0" />
+            <element signature="e#19001#19061#1" />
+            <element signature="e#19067#19135#1" />
+            <element signature="e#19168#19453#0" />
+            <element signature="e#19168#19800#0" />
+            <element signature="e#19639#19699#1" />
+            <element signature="e#19705#19773#1" />
+            <element signature="e#19806#20091#0" />
+            <element signature="e#19806#20440#0" />
+            <element signature="e#20281#20341#1" />
+            <element signature="e#20347#20413#1" />
+            <element signature="e#20446#20731#0" />
+            <element signature="e#20446#21076#0" />
+            <element signature="e#20915#20975#1" />
+            <element signature="e#20981#21049#1" />
+            <element signature="e#21103#21388#0" />
+            <element signature="e#21103#21628#0" />
+            <element signature="e#21634#21919#0" />
+            <element signature="e#21634#22160#0" />
+            <element signature="e#22166#22451#0" />
+            <element signature="e#22166#22693#0" />
+            <element signature="e#22699#22984#0" />
+            <element signature="e#22699#23224#0" />
+            <element signature="e#23230#23515#0" />
+            <element signature="e#23230#23753#0" />
+            <element signature="e#23759#24056#0" />
+            <element signature="e#23759#24312#0" />
+            <element signature="e#24318#24615#0" />
+            <element signature="e#24318#24872#0" />
+            <element signature="e#24878#25175#0" />
+            <element signature="e#24878#25433#0" />
+            <element signature="e#25439#25735#0" />
+            <element signature="e#25439#25991#0" />
+            <element signature="e#25997#26294#0" />
+            <element signature="e#25997#26548#0" />
+            <element signature="e#26572#26854#0" />
+            <element signature="e#26572#27088#0" />
+            <element signature="e#27094#27376#0" />
+            <element signature="e#27094#27611#0" />
+            <element signature="e#27617#27899#0" />
+            <element signature="e#27617#28135#0" />
+            <element signature="e#28141#28423#0" />
+            <element signature="e#28141#28657#0" />
+            <element signature="e#28663#28945#0" />
+            <element signature="e#28663#29177#0" />
+            <element signature="e#29183#29477#0" />
+            <element signature="e#29183#29727#0" />
+            <element signature="e#29733#30027#0" />
+            <element signature="e#29733#30278#0" />
+            <element signature="e#30284#30578#0" />
+            <element signature="e#30284#30830#0" />
+            <element signature="e#30836#31130#0" />
+            <element signature="e#30836#31380#0" />
+            <element signature="e#31386#31680#0" />
+            <element signature="e#31386#31928#0" />
+            <element signature="e#31950#32271#0" />
+            <element signature="e#31950#32513#0" />
+            <element signature="e#32519#32840#0" />
+            <element signature="e#32519#33084#0" />
+            <element signature="e#33090#33411#0" />
+            <element signature="e#33090#33658#0" />
+            <element signature="e#33664#33985#0" />
+            <element signature="e#33664#34229#0" />
+            <element signature="e#34235#34556#0" />
+            <element signature="e#34235#34797#0" />
+            <element signature="e#34821#35133#0" />
+            <element signature="e#35272#35714#0" />
+            <element signature="e#35272#35971#0" />
+            <element signature="e#35977#36290#0" />
+            <element signature="e#35977#36427#0" />
+            <element signature="e#36433#36881#0" />
+            <element signature="e#36433#37142#0" />
+            <element signature="e#37148#37459#0" />
+            <element signature="e#37598#38042#0" />
+            <element signature="e#37598#38299#0" />
+            <element signature="e#38322#38513#0" />
+            <element signature="e#38322#38608#0" />
+            <element signature="e#38614#38799#0" />
+            <element signature="e#38614#38895#0" />
+            <element signature="e#38901#38986#0" />
+            <element signature="e#38901#39070#0" />
+            <element signature="e#39076#39152#0" />
+            <element signature="e#39076#39238#0" />
+            <element signature="e#39244#39606#0" />
+            <element signature="e#39244#39863#0" />
+            <element signature="e#39869#39882#0" />
+            <element signature="e#39900#40335#0" />
+            <element signature="e#39900#40873#0" />
+            <element signature="e#40488#40867#0" />
+            <element signature="e#40895#41477#0" />
+            <element signature="e#40895#42031#0" />
+            <element signature="e#41634#42025#0" />
+            <element signature="e#42049#42556#0" />
+            <element signature="e#42049#43151#0" />
+            <element signature="e#42739#43145#0" />
+            <element signature="e#43157#43626#0" />
+            <element signature="e#43157#43792#0" />
+            <element signature="e#43810#44318#0" />
+            <element signature="e#43810#44913#0" />
+            <element signature="e#44501#44907#0" />
+            <element signature="e#44919#45389#0" />
+            <element signature="e#44919#45555#0" />
+            <element signature="e#45561#45796#0" />
+            <element signature="e#45869#49490#0" />
+            <element signature="e#46398#46483#0" />
+            <element signature="e#46605#46697#0" />
+            <element signature="e#46836#46991#1" />
+            <element signature="e#46997#47091#1" />
+            <element signature="e#47476#49224#1" />
+            <element signature="e#47555#48732#0" />
+            <element signature="e#48753#49021#0" />
+            <element signature="e#49030#49206#0" />
+            <element signature="e#49108#49184#1" />
+            <element signature="e#49230#49328#1" />
+            <element signature="e#49496#49755#0" />
+            <element signature="e#49496#50338#0" />
+            <element signature="e#49931#50066#1" />
+            <element signature="e#50072#50177#1" />
+            <element signature="e#50223#50303#1" />
+            <element signature="e#50344#50758#0" />
+            <element signature="e#50344#54384#0" />
+            <element signature="e#51225#51310#0" />
+            <element signature="e#51432#51524#0" />
+            <element signature="e#51663#51818#1" />
+            <element signature="e#51824#51918#1" />
+            <element signature="e#52303#54118#1" />
+            <element signature="e#52382#53626#0" />
+            <element signature="e#52699#52763#0" />
+            <element signature="e#53647#53915#0" />
+            <element signature="e#53924#54100#0" />
+            <element signature="e#54002#54078#1" />
+            <element signature="e#54124#54222#1" />
+            <element signature="e#54390#55054#0" />
+            <element signature="e#54390#55991#0" />
+            <element signature="e#55359#55479#1" />
+            <element signature="e#55597#55725#1" />
+            <element signature="e#55731#55830#1" />
+            <element signature="e#55876#55956#1" />
+            <element signature="e#55997#56469#0" />
+            <element signature="e#55997#60217#0" />
+            <element signature="e#56709#56829#1" />
+            <element signature="e#57584#57739#1" />
+            <element signature="e#57745#57839#1" />
+            <element signature="e#58224#59952#1" />
+            <element signature="e#58303#59460#0" />
+            <element signature="e#59481#59749#0" />
+            <element signature="e#59758#59934#0" />
+            <element signature="e#59836#59912#1" />
+            <element signature="e#59958#60056#1" />
+            <element signature="e#60224#60854#0" />
+            <element signature="e#60984#61442#0" />
+            <element signature="e#60984#61576#0" />
+            <element signature="e#61582#62273#0" />
+            <element signature="e#61582#63707#0" />
+            <element signature="e#62508#62583#1" />
+            <element signature="e#62589#63701#1" />
+            <element signature="e#62760#63138#1" />
+            <element signature="e#62940#63076#1" />
+            <element signature="e#63271#63407#1" />
+            <element signature="e#63413#63520#1" />
+            <element signature="e#63570#63658#1" />
+            <element signature="e#63793#64225#0" />
+            <element signature="e#63793#68711#0" />
+            <element signature="e#64469#64550#1" />
+            <element signature="e#64556#68705#1" />
+            <element signature="e#65132#65504#1" />
+            <element signature="e#65312#65448#1" />
+            <element signature="e#65897#66064#1" />
+            <element signature="e#66070#66172#1" />
+            <element signature="e#66577#68407#1" />
+            <element signature="e#66664#67879#0" />
+            <element signature="e#67900#68184#0" />
+            <element signature="e#68193#68385#0" />
+            <element signature="e#68275#68359#1" />
+            <element signature="e#68413#68519#1" />
+            <element signature="e#68717#69489#0" />
+            <element signature="e#68717#69749#0" />
+            <element signature="e#69755#70235#0" />
+            <element signature="e#69755#70516#0" />
+            <element signature="e#70522#71396#0" />
+            <element signature="e#70522#71767#0" />
+            <element signature="e#71773#72275#0" />
+            <element signature="e#71773#72678#0" />
+            <element signature="e#72684#72892#0" />
+            <element signature="e#72684#73614#0" />
+            <element signature="e#73051#73566#1" />
+            <element signature="e#73175#73524#1" />
+            <element signature="e#73572#73608#1" />
+            <element signature="e#73620#74157#0" />
+            <element signature="e#73620#77862#0" />
+            <element signature="e#74695#74786#0" />
+            <element signature="e#74910#75018#1" />
+            <element signature="e#75024#75161#1" />
+            <element signature="e#75589#77608#1" />
+            <element signature="e#75668#77008#0" />
+            <element signature="e#76217#76486#1" />
+            <element signature="e#77029#77405#0" />
+            <element signature="e#77414#77590#0" />
+            <element signature="e#77492#77568#1" />
+            <element signature="e#77614#77712#1" />
+            <element signature="e#77868#78567#0" />
+            <element signature="e#77981#78072#1" />
+            <element signature="e#78102#78193#1" />
+            <element signature="e#78227#78332#1" />
+            <element signature="e#78382#78561#1" />
+            <element signature="e#78573#78956#0" />
+            <element signature="e#78667#78863#1" />
+            <element signature="e#78962#79562#0" />
+            <element signature="e#79320#79364#1" />
+            <element signature="e#79484#79556#1" />
+            <element signature="e#79568#80121#0" />
+            <element signature="e#79980#80115#1" />
+            <element signature="e#80127#80549#0" />
+            <element signature="e#80245#80285#1" />
+            <element signature="e#80317#80381#1" />
+            <element signature="e#80418#80497#1" />
+            <element signature="e#80503#80543#1" />
+            <element signature="e#80637#80789#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/realm/BookRealmObject.kt">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/WishListFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#1387#1914#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookRealmObject.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
@@ -984,23 +1334,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alberttest/ui/main/FavoritesFragment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/ui/main/SearchFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+        <state relative-caret-position="573">
+          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
           <folding>
-            <element signature="e#1104#1177#0" />
-            <element signature="e#1434#1793#0" />
-            <element signature="e#1906#2048#0" />
-            <element signature="e#2102#2283#0" />
-            <element signature="e#2552#2778#0" />
-            <element signature="e#2953#3540#0" />
-            <element signature="e#2963#3073#0" />
-            <element signature="e#3147#3254#0" />
-            <element signature="e#3337#3534#0" />
-            <element signature="e#3384#3524#2" />
-            <element signature="e#3429#3510#2" />
+            <element signature="e#3191#3590#0" />
+            <element signature="e#3615#4196#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/BookModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+          <folding>
+            <element signature="e#38#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert_challenge/realm/RealmApp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>

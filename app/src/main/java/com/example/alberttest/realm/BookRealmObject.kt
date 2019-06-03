@@ -7,13 +7,15 @@ open class BookRealmObject(
     @PrimaryKey
     open var title: String="",
     open var authorName: String = "",
-    open var seed: List<String> = listOf("","","")
+    open var coverID: Int = 8314541,
+    open var seed: String = ""
 )
     : RealmObject() {
 
     fun copy(
         title: String = this.title,
         authorName: String = this.authorName,
-        seed: List<String> = this.seed )
-            = BookRealmObject(title, authorName, seed)
+        coverID: Int= this.coverID,
+        seed: String = this.seed )
+            = BookRealmObject(title, authorName, coverID, seed )
 }

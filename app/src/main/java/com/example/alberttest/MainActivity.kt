@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
+import com.example.alberttest.realm.BookModel
 import com.example.alberttest.ui.main.SectionsPagerAdapter
 import io.realm.Realm
 import io.realm.RealmConfiguration
@@ -21,12 +22,5 @@ class MainActivity : AppCompatActivity() {
 
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
-
-
-        var c = RealmConfiguration.Builder(applicationContext)
-        c.name("book")
-        c.deleteRealmIfMigrationNeeded()
-        Realm.setDefaultConfiguration(c.build())
-
     }
 }

@@ -5,7 +5,6 @@ import io.realm.RealmResults
 
 class BookModel : BookInterface {
 
-
     override fun addBook(realm: Realm, book: BookRealmObject): Boolean {
         try {
             realm.beginTransaction()
@@ -42,8 +41,8 @@ class BookModel : BookInterface {
         }
     }
 
-    override fun getBook(realm: Realm, bookId: Int): BookRealmObject {
-        return realm.where(BookRealmObject::class.java).equalTo("_ID", bookId).findFirst()
+    override fun getBook(realm: Realm, title: String): BookRealmObject {
+        return realm.where(BookRealmObject::class.java).equalTo("title", title).findFirst()
     }
 
     fun getLastbook(realm: Realm): BookRealmObject {

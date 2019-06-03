@@ -18,8 +18,8 @@ import com.example.alberttest.RecyclerItemClickListener
 import com.example.alberttest.adapter.RecyclerAdapter
 import com.example.alberttest.io.retrofit.ApiHandler
 import com.example.alberttest.model.JSONData
-import kotlinx.android.synthetic.main.favorite_fragment.view.*
-import kotlinx.android.synthetic.main.favorite_fragment.view.recyclerView
+import kotlinx.android.synthetic.main.wish_list_fragment.view.*
+import kotlinx.android.synthetic.main.wish_list_fragment.view.recyclerView
 import kotlinx.android.synthetic.main.search_fragment.view.*
 
 class SearchFragment: Fragment() {

@@ -20,8 +20,8 @@ import com.example.alberttest.adapter.RecyclerAdapter
 import com.example.alberttest.io.retrofit.ApiHandler
 import com.example.alberttest.model.JSONData
 import io.realm.processor.Utils
-import kotlinx.android.synthetic.main.favorite_fragment.*
-import kotlinx.android.synthetic.main.favorite_fragment.view.*
+import kotlinx.android.synthetic.main.wish_list_fragment.*
+import kotlinx.android.synthetic.main.wish_list_fragment.view.*
 
 
 class SearchPageModel : ViewModel() {

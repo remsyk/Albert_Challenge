@@ -23,7 +23,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) : 
         return when (position) {
             0 -> SearchFragment.newInstance(position)
             else -> {
-                return FavoritesFragment.newInstance(position)
+                return WishListFragment.newInstance(position)
             }
         }
     }

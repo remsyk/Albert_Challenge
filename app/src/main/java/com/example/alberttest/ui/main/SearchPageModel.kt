@@ -20,8 +20,8 @@ import com.example.alberttest.adapter.RecyclerAdapter
 import com.example.alberttest.io.retrofit.ApiHandler
 import com.example.alberttest.model.JSONData
 import io.realm.processor.Utils
-import kotlinx.android.synthetic.main.fragment_main.*
-import kotlinx.android.synthetic.main.fragment_main.view.*
+import kotlinx.android.synthetic.main.favorite_fragment.*
+import kotlinx.android.synthetic.main.favorite_fragment.view.*
 
 
 class SearchPageModel : ViewModel() {
@@ -35,18 +35,6 @@ class SearchPageModel : ViewModel() {
      fun updateRecyclerView(v:View, newBookList: List<JSONData?>?, context: Context) {
         bookList = newBookList
         v.recyclerView.adapter = RecyclerAdapter(bookList, context)
-        /* v.recyclerView.addOnItemTouchListener(RecyclerItemClickListener(context, v.recyclerView, object : RecyclerItemClickListener.OnItemClickListener {
-
-             override fun onItemClick(view: View, position: Int) {
-                 Log.i("WE MADE IT", bookList?.get(position).toString())
-                 val bookInfoIntent = BookInfo.newIntent(context, bookList, position)
-                 context.startActivity(bookInfoIntent)
-             }
-             override fun onItemLongClick(view: View?, position: Int) {
-                 Log.i("LONGPRESS", "LONGPRESS")
-
-             }
-         }))*/
         v.recyclerView.invalidate()
     }
 

@@ -7,9 +7,7 @@ import io.realm.RealmConfiguration
 class RealmApp : Application() {
     override fun onCreate() {
         super.onCreate()
-        var c = RealmConfiguration.Builder(applicationContext)
-        c.name("book_wish_list")
-        c.deleteRealmIfMigrationNeeded()
-        Realm.setDefaultConfiguration(c.build())
+        Realm.init(this)
+        Realm.setDefaultConfiguration(RealmConfiguration.Builder().build())
     }
 }

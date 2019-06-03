@@ -70,7 +70,7 @@ dependencies {
     //Databinding and Realm Annotations
     annotationProcessor 'com.android.databinding:compiler:3.2.0-alpha10'
     annotationProcessor "io.realm:realm-annotations:5.4.1"
-    annotationProcessor "io.realm:realm-annotations-processor:0.87.4"
+    annotationProcessor "io.realm:realm-annotations-processor:5.4.1"
 
     
 

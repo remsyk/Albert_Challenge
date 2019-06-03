@@ -1,54 +1,27 @@
 package com.example.albert_challenge.realm
 
+import com.example.albert_challenge.model.JSONData
 import io.realm.Realm
 import io.realm.RealmResults
 
 class BookModel : BookInterface {
 
-    override fun addBook(realm: Realm, book: BookRealmObject): Boolean {
-        try {
-            realm.beginTransaction()
-            realm.copyToRealmOrUpdate(book)
-            realm.commitTransaction()
-            return true
-        } catch (e: Exception) {
-            println(e)
-            return false
+    override fun addBook(bookList: List<JSONData?>?, pos: Int) {
+        Realm.getDefaultInstance().use { r ->
+            r.executeTransaction { realm ->
+                val book: BookRealmObject = realm.copyToRealmOrUpdate(BookRealmObject().apply{
+                    seed = bookList?.get(pos)?.seed?.get(1).toString()
+                    title = bookList?.get(pos)?.title
+                    authorName =  bookList?.get(pos)?.authorName?.get(0)
+                    coverID = bookList?.get(pos)?.coverI
+                })
+            }
         }
     }
 
     //chose to use seed get database reference rather than title because there might be duplicates of the same title
-    override fun delBook(realm: Realm, seed: String): Boolean {
-        try {
-            realm.beginTransaction()
-            realm.where(BookRealmObject :: class.java).equalTo("seed", seed).findFirst().removeFromRealm()
-            realm.commitTransaction()
-            return true
-        } catch (e: Exception) {
-            println(e)
-            return false
-        }
-    }
-
-    override fun editBook(realm: Realm, book: BookRealmObject): Boolean {
-        try {
-            realm.beginTransaction()
-            realm.copyToRealm(book)
-            realm.commitTransaction()
-            return true
-        } catch (e: Exception) {
-            println(e)
-            return false
-        }
-    }
-
-    //chose to use seed get database reference rather than title because there might be duplicates of the same title
-    override fun getBook(realm: Realm, seed: String): BookRealmObject {
-        return realm.where(BookRealmObject::class.java).equalTo("seed", seed).findFirst()
-    }
-
-    fun getLastbook(realm: Realm): BookRealmObject {
-        return realm.where(BookRealmObject::class.java).findAll().last()
+    override fun delBook(bookList: List<JSONData?>?, pos: Int) {
+      //TODO
     }
 
     fun getbooks(realm: Realm): RealmResults<BookRealmObject> {

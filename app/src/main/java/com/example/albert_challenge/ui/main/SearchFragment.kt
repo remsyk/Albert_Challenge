@@ -30,10 +30,13 @@ class SearchFragment: Fragment() {
     var bookList: List<JSONData?>? = null
     var apiHandler: ApiHandler = ApiHandler()
     var bookModel = BookModel()
-    var realm = Realm.getDefaultInstance()
+    var realm : Realm? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        realm = Realm.getDefaultInstance()
+
+
     }
 
     override fun onAttach(context: Context){
@@ -81,8 +84,7 @@ class SearchFragment: Fragment() {
             }
             override fun onItemLongClick(view: View?, position: Int) {
                 Toast.makeText(context, "Added to wish list", Toast.LENGTH_SHORT).show()
-                addBook2Realm(bookList,position)
-
+                bookModel.addBook(bookList,position)
             }
         }))
     }
@@ -99,20 +101,6 @@ class SearchFragment: Fragment() {
             }
         })
     }
-
-    fun addBook2Realm(bookList: List<JSONData?>?, pos: Int){
-        var book = BookRealmObject(title =  bookList?.get(pos)?.title!!, authorName =  bookList?.get(pos)?.authorName?.get(0)!!, coverID = bookList?.get(pos)?.coverI!!,  seed =  bookList?.get(pos)?.seed?.get(1).toString())
-        if (bookModel.getbooks(realm).count() <= 0) {
-            bookModel.addBook(realm, book)
-        } else {
-            var v = bookModel.getLastbook(realm)
-            var newBook = v.copy(v.title + 1)
-            bookModel.addBook(realm, newBook)
-        }
-        //displayBooks(realm)
-        //TODO update view
-    }
-
 
 
     companion object {

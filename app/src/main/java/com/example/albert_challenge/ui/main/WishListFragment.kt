@@ -28,11 +28,6 @@ class WishListFragment: Fragment() {
     var realm: Realm = Realm.getDefaultInstance()
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onAttach(context: Context){
         super.onAttach(context)
         fragmentContext = context
@@ -40,7 +35,6 @@ class WishListFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.wish_list_fragment, container, false)
-
         setupRecyclerView(root,fragmentContext,bookModel.getbooks(realm))
         updateRecyclerView2(root, fragmentContext, realm, bookModel.getbooks(realm))
         return root
@@ -101,9 +95,4 @@ class WishListFragment: Fragment() {
         }
 
     }
-}
-
-private fun <E> RealmResults<E>.observe(wishListFragment: WishListFragment, observer: Observer<RealmResults<E>>) {
-
-
 }

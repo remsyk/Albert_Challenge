@@ -25,5 +25,4 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//TODO update view from realm database when new book is added/deleted
 //TODO Documentation

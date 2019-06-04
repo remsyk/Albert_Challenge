@@ -22,3 +22,10 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
     }
 }
+
+
+
+//TODO populate recyclerview for wishlist from realm
+//TODO be able to delete item from realm
+//TODO update view from realm database when new book is added
+//TODO Documentation

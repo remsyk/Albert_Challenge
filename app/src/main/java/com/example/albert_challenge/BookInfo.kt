@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.albert_challenge.model.JSONData
+import com.example.albert_challenge.realm.BookRealmObject
+import io.realm.RealmResults
 
 
 class BookInfo : AppCompatActivity() {
@@ -19,10 +21,16 @@ class BookInfo : AppCompatActivity() {
         const val BASE_BOOK_URL = "https://openlibrary.org/"
         private var BOOK_URL = ""
 
-        fun newIntent(context: Context, bookList: List<JSONData?>?, pos: Int): Intent {
+        fun newIntent(context: Context, bookList: List<JSONData?>?, wishList: RealmResults<BookRealmObject>?, pos: Int): Intent {
             val detailIntent = Intent(context, BookInfo::class.java)
-            detailIntent.putExtra(BOOK_TITLE, bookList?.get(pos)?.title)
-            detailIntent.putExtra(BOOK_URL, bookList?.get(pos)?.seed?.get(1).toString())
+
+            if(bookList != null) {
+                detailIntent.putExtra(BOOK_TITLE, bookList?.get(pos)?.title)
+                detailIntent.putExtra(BOOK_URL, bookList?.get(pos)?.seed?.get(1).toString())
+            }else{
+                detailIntent.putExtra(BOOK_TITLE, wishList?.get(pos)?.title)
+                detailIntent.putExtra(BOOK_URL, wishList?.get(pos)?.seed.toString())
+            }
             return detailIntent
         }
     }

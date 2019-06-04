@@ -55,9 +55,6 @@ class SearchFragment: Fragment() {
             })
         }
 
-        bookModel.start(realm)
-
-
         return root
     }
 
@@ -79,7 +76,7 @@ class SearchFragment: Fragment() {
 
             override fun onItemClick(view: View, position: Int) {
                 //Log.i("WE MADE IT", bookList?.get(position).toString())
-                val bookInfoIntent = BookInfo.newIntent(context, bookList, position)
+                val bookInfoIntent = BookInfo.newIntent(context, bookList,null, position)
                 context.startActivity(bookInfoIntent)
             }
             override fun onItemLongClick(view: View?, position: Int) {

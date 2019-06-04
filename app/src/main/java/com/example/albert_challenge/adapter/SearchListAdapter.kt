@@ -28,8 +28,6 @@ class SearchListAdapter(val bookList: List<JSONData?>?, val context: Context) : 
         }
     }
 
-
-
     override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
         imageURL = imageUrlBase + bookList?.get(pos)?.coverI + "-L.jpg"
         Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)

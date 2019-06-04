@@ -6,13 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.albert_challenge.R
-import com.example.albert_challenge.model.JSONData
 import com.example.albert_challenge.realm.BookRealmObject
 import com.squareup.picasso.Picasso
 import io.realm.RealmResults
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class WishListAdapter(val book: BookRealmObject, val context: Context) : RecyclerView.Adapter<WishListAdapter.BookViewHolder>() {
+class WishListAdapter(private val wishList: RealmResults<BookRealmObject>, val context: Context) : RecyclerView.Adapter<WishListAdapter.BookViewHolder>() {
 
     private var imageURL = ""
     private val imageUrlBase = "http://covers.openlibrary.org/b/id/"
@@ -23,20 +22,37 @@ class WishListAdapter(val book: BookRealmObject, val context: Context) : Recycle
     }
 
     override fun getItemCount(): Int {
-        if (book == null) {
+        if (wishList == null) {
             return 0
         } else {
-            return 10
+            return wishList.size
         }
     }
 
-
     override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
-        imageURL = imageUrlBase + book.coverID + "-L.jpg"
+        imageURL = imageUrlBase + wishList.get(pos)?.coverID + "-L.jpg"
         Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)
-        viewHolder.titleTextView.text = book.title
-        viewHolder.authorTextView.text = book.authorName
+        viewHolder.titleTextView.text = wishList.get(pos)?.title
+        viewHolder.authorTextView.text = wishList.get(pos)?.authorName
     }
+
+    /*override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
+        imageURL = imageUrlBase + wishList[pos]?.coverID + "-L.jpg"
+        Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)
+        viewHolder.titleTextView.text = wishList[pos]?.title
+        viewHolder.authorTextView.text = wishList[pos]?.authorName
+    }*/
+
+    /*override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
+        var book = wishList.get(pos)
+        imageURL = imageUrlBase + book?.coverID + "-L.jpg"
+        Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)
+        viewHolder.titleTextView.text = book?.title
+        //viewHolder.authorTextView.text = book?.authorName
+        viewHolder.authorTextView.text = "HELLO!!"
+
+    }*/
+
 
     // view holder
     class BookViewHolder(view: View) : RecyclerView.ViewHolder(view) {

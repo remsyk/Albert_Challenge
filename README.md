@@ -18,7 +18,7 @@ This is a coding challenge for android development role at a company called Albe
 
 ## Issues 
 
-I would have addressed these if there was more time
+"I would have fixed these if there was more time"
 
 * With the current work around, when back button is pressed it resets the application rather than bringing user back to the previous activity. Before it would take multiple rapid presses of the back button to return to the previous activity
 * updateRecyclerView is called way to many times
@@ -26,6 +26,7 @@ I would have addressed these if there was more time
 * When books are deleted from wishlist, the ordering is not preserved
 * The search functionality is very strange, the first result almost always ends up being Laws and then Hamlet. 
 * Ordering of search results does not seems to have a particular logic to it at times, but will return acceptable results
+* Code architecture could for sure be better, especially with how methods are defined and built within some of the classes
 
 
 

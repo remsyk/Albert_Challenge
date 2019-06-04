@@ -4,7 +4,7 @@ This is a coding challenge for android development role at a company called Albe
 
 ## How to use
 
-* Search is live, so as user types in search books will appear in recycler view
+* Search is live, so as user types in search, books will appear in recycler view
 * **Single Press**, opens a webview revealing more data about book
 * **Long Press**, either adds or deletes a wish list item depending on what tab user is on
 * **Back Button**, takes user out of webview

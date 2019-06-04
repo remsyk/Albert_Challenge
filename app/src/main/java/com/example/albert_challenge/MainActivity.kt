@@ -25,6 +25,5 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//TODO be able to delete item from realm
-//TODO update view from realm database when new book is added
+//TODO update view from realm database when new book is added/deleted
 //TODO Documentation

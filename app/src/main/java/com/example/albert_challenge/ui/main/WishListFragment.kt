@@ -1,14 +1,14 @@
 package com.example.albert_challenge.ui.main
 
+import android.arch.lifecycle.Observer
+import android.content.Context
 import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.support.v4.app.Fragment
-import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
-import android.widget.TextView
 import android.widget.Toast
 import com.example.albert_challenge.R
 import com.example.albert_challenge.RecyclerItemClickListener
@@ -17,8 +17,8 @@ import com.example.albert_challenge.realm.BookModel
 import com.example.albert_challenge.realm.BookRealmObject
 import io.realm.Realm
 import io.realm.RealmResults
-import kotlinx.android.synthetic.main.wish_list_fragment.*
 import kotlinx.android.synthetic.main.wish_list_fragment.view.*
+
 
 class WishListFragment: Fragment() {
 
@@ -43,27 +43,15 @@ class WishListFragment: Fragment() {
 
         setupRecyclerView(root,fragmentContext,bookModel.getbooks(realm))
         updateRecyclerView2(root, fragmentContext, realm, bookModel.getbooks(realm))
-
         return root
     }
 
 
-    /*fun updateRecyclerView(v:View, context: Context, realm: Realm, bookModel: BookModel) {
-        Log.i("Realm", "Onchangelistener OK!")
-        var myList: RealmResults<BookRealmObject> = realm.where(BookRealmObject::class.java).findAll()
-        myList.addChangeListener(RealmChangeListener<RealmResults<BookRealmObject>> {
-            Log.i("Realm", "Database Updated")
-            v.recyclerView.adapter = WishListAdapter(bookModel.getbooks(realm), context)
-            v.recyclerView.invalidate()
-        })
-    }
-*/
-    fun updateRecyclerView2(v:View?, context: Context, realm: Realm, wishList: RealmResults<BookRealmObject>) {
+    fun updateRecyclerView2(v:View?, context: Context, realm: Realm, wishList: RealmResults<BookRealmObject>?) {
         Log.i("Books in Realm" , wishList.toString())
-        v?.wishrecyclerView?.adapter = WishListAdapter(wishList, context)
-        v?.wishrecyclerView?.adapter?.notifyDataSetChanged()
-        //v?.wishrecyclerView?.recycledViewPool?.clear()
-        v?.wishrecyclerView?.invalidate()
+        var wishListAdapter  = WishListAdapter(wishList, context)
+        v?.wishrecyclerView?.adapter = wishListAdapter
+        wishListAdapter.update()
     }
 
     fun setupRecyclerView(v:View, context: Context, wishList: RealmResults<BookRealmObject>) {
@@ -86,9 +74,6 @@ class WishListFragment: Fragment() {
                 Log.i("Updated After Delete" , wishList.toString())
                 val newBooklist = bookModel.delBook(realm, wishList.get(position))
                 updateRecyclerView2(view, fragmentContext, realm, newBooklist)
-                //view?.wishrecyclerView?.adapter?.notifyDataSetChanged()
-                view?.wishrecyclerView?.adapter?.notifyItemRemoved(position)
-
 
             }
         }))
@@ -116,4 +101,9 @@ class WishListFragment: Fragment() {
         }
 
     }
+}
+
+private fun <E> RealmResults<E>.observe(wishListFragment: WishListFragment, observer: Observer<RealmResults<E>>) {
+
+
 }

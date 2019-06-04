@@ -1,9 +1,11 @@
 package com.example.albert_challenge.realm
 
+import android.arch.lifecycle.LiveData
 import android.util.Log
 import com.example.albert_challenge.model.JSONData
 import io.realm.Realm
 import io.realm.RealmChangeListener
+import io.realm.RealmModel
 import io.realm.RealmResults
 
 
@@ -23,13 +25,6 @@ class BookModel : BookInterface {
         }
     }
 
-    //chose to use seed get database reference rather than title because there might be duplicates of the same title
-    /*override fun delBook(realm: Realm, bookList:RealmResults<BookRealmObject>, pos: Int) {
-        realm.executeTransaction(Realm.Transaction { realm ->
-            val result = realm.where(BookRealmObject::class.java!!).equalTo(bookList.seed, seed).findAll()
-            result.deleteAllFromRealm()
-        })
-    }*/
 
     override fun delBook(realm: Realm, book:BookRealmObject?) :RealmResults<BookRealmObject> {
         realm.executeTransaction(Realm.Transaction { realm ->
@@ -39,11 +34,13 @@ class BookModel : BookInterface {
     }
 
 
-
     fun getbooks(realm: Realm): RealmResults<BookRealmObject> {
         return realm.where(BookRealmObject::class.java).findAll()
     }
 
+    fun getbooks3(realm: Realm): LiveData<RealmResults<BookRealmObject>> {
+        return realm.where(BookRealmObject::class.java).findAllAsync().asLiveData()
+    }
     fun getbooks2(books: RealmResults<BookRealmObject>): RealmResults<BookRealmObject> {
         Log.i("Realm", books.toString())
         return books
@@ -58,3 +55,8 @@ class BookModel : BookInterface {
         })
     }
 }
+
+fun <T: RealmModel> RealmResults<T>.asLiveData() = RealmLiveData<T>(this)
+
+
+

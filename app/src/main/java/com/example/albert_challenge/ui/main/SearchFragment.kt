@@ -15,6 +15,7 @@ import android.widget.Toast
 import com.example.albert_challenge.R
 import com.example.albert_challenge.RecyclerItemClickListener
 import com.example.albert_challenge.adapter.SearchListAdapter
+import com.example.albert_challenge.adapter.WishListAdapter
 import com.example.albert_challenge.io.retrofit.ApiHandler
 import com.example.albert_challenge.model.JSONData
 import com.example.albert_challenge.realm.BookModel
@@ -80,8 +81,8 @@ class SearchFragment: Fragment() {
             override fun onItemLongClick(view: View?, position: Int) {
                 Toast.makeText(context, bookList?.get(position)?.title.toString() + " added", Toast.LENGTH_SHORT).show()
                 bookModel.addBook(bookList,position)
-                //WishListFragment.updateRecyclerView (root, fragmentContext)
-
+                var wishListAdapter  = WishListAdapter(bookModel.getbooks(realm), context)
+                wishListAdapter.update()
             }
         }))
     }

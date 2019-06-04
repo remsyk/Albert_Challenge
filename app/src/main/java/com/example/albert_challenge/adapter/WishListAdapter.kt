@@ -2,6 +2,7 @@ package com.example.albert_challenge.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,24 +36,6 @@ class WishListAdapter(private val wishList: RealmResults<BookRealmObject>, val c
         viewHolder.titleTextView.text = wishList.get(pos)?.title
         viewHolder.authorTextView.text = wishList.get(pos)?.authorName
     }
-
-    /*override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
-        imageURL = imageUrlBase + wishList[pos]?.coverID + "-L.jpg"
-        Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)
-        viewHolder.titleTextView.text = wishList[pos]?.title
-        viewHolder.authorTextView.text = wishList[pos]?.authorName
-    }*/
-
-    /*override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
-        var book = wishList.get(pos)
-        imageURL = imageUrlBase + book?.coverID + "-L.jpg"
-        Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)
-        viewHolder.titleTextView.text = book?.title
-        //viewHolder.authorTextView.text = book?.authorName
-        viewHolder.authorTextView.text = "HELLO!!"
-
-    }*/
-
 
     // view holder
     class BookViewHolder(view: View) : RecyclerView.ViewHolder(view) {

@@ -6,6 +6,8 @@ import io.realm.Realm
 import io.realm.RealmChangeListener
 import io.realm.RealmResults
 
+
+
 class BookModel : BookInterface {
 
     override fun addBook(bookList: List<JSONData?>?, pos: Int) {
@@ -22,9 +24,21 @@ class BookModel : BookInterface {
     }
 
     //chose to use seed get database reference rather than title because there might be duplicates of the same title
-    override fun delBook(bookList: List<JSONData?>?, pos: Int) {
-      //TODO
+    /*override fun delBook(realm: Realm, bookList:RealmResults<BookRealmObject>, pos: Int) {
+        realm.executeTransaction(Realm.Transaction { realm ->
+            val result = realm.where(BookRealmObject::class.java!!).equalTo(bookList.seed, seed).findAll()
+            result.deleteAllFromRealm()
+        })
+    }*/
+
+    override fun delBook(realm: Realm, book:BookRealmObject?) :RealmResults<BookRealmObject> {
+        realm.executeTransaction(Realm.Transaction { realm ->
+            realm.where( BookRealmObject:: class.java).equalTo("seed", book?.seed).findAll()?.deleteAllFromRealm()
+        })
+        return getbooks(realm)
     }
+
+
 
     fun getbooks(realm: Realm): RealmResults<BookRealmObject> {
         return realm.where(BookRealmObject::class.java).findAll()

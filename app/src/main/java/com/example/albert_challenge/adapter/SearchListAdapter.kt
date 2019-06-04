@@ -10,7 +10,7 @@ import com.example.albert_challenge.model.JSONData
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class SearchListAdapter(val bookList: List<JSONData?>?, val context: Context) : RecyclerView.Adapter<SearchListAdapter.BookViewHolder>() {
+class SearchListAdapter(private val bookList: List<JSONData?>?, val context: Context) : RecyclerView.Adapter<SearchListAdapter.BookViewHolder>() {
 
     private var imageURL = ""
     private val imageUrlBase = "http://covers.openlibrary.org/b/id/"
@@ -37,8 +37,8 @@ class SearchListAdapter(val bookList: List<JSONData?>?, val context: Context) : 
 
     // view holder
     class BookViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val bookImageView = view.book_image
-        val titleTextView = view.book_title
-        val authorTextView = view.book_author
+        val bookImageView = view.book_image!!
+        val titleTextView = view.book_title!!
+        val authorTextView = view.book_author!!
     }
 }

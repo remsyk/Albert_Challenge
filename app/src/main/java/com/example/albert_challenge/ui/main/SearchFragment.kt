@@ -12,7 +12,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
 import android.widget.Toast
-import com.example.albert_challenge.BookInfo
 import com.example.albert_challenge.R
 import com.example.albert_challenge.RecyclerItemClickListener
 import com.example.albert_challenge.adapter.SearchListAdapter
@@ -20,7 +19,6 @@ import com.example.albert_challenge.io.retrofit.ApiHandler
 import com.example.albert_challenge.model.JSONData
 import com.example.albert_challenge.realm.BookModel
 import io.realm.Realm
-import kotlinx.android.synthetic.main.wish_list_fragment.view.recyclerView
 import kotlinx.android.synthetic.main.search_fragment.view.*
 
 class SearchFragment: Fragment() {
@@ -80,7 +78,7 @@ class SearchFragment: Fragment() {
                 context.startActivity(bookInfoIntent)
             }
             override fun onItemLongClick(view: View?, position: Int) {
-                Toast.makeText(context, "Added to wish list", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, bookList?.get(position)?.title.toString() + " added", Toast.LENGTH_SHORT).show()
                 bookModel.addBook(bookList,position)
                 //WishListFragment.updateRecyclerView (root, fragmentContext)
 

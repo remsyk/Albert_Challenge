@@ -1,4 +1,4 @@
-package com.example.albert_challenge
+package com.example.albert_challenge.ui.main
 
 import android.content.Context
 import android.content.Intent
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import com.example.albert_challenge.MainActivity
+import com.example.albert_challenge.R
 import com.example.albert_challenge.model.JSONData
 import com.example.albert_challenge.realm.BookRealmObject
 import io.realm.RealmResults

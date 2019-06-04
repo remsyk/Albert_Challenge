@@ -1,4 +1,4 @@
-# Albert_Challenge
+# Albert Challenge
 
 This is a coding challenge for android development role at a company called Albert. 
 
@@ -22,7 +22,7 @@ This is a coding challenge for android development role at a company called Albe
 
 * With the current work around, when back button is pressed it resets the application rather than bringing user back to the previous activity. Before it would take multiple rapid presses of the back button to return to the previous activity
 * updateRecyclerView is called way to many times
-* Memory management could be better
+* Memory management needs to be better
 * When books are deleted from wishlist, the ordering is not preserved
 * The search functionality is very strange, the first result almost always ends up being Laws and then Hamlet. 
 * Ordering of search results does not seems to have a particular logic to it at times, but will return acceptable results

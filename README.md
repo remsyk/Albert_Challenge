@@ -1,6 +1,6 @@
 # Albert Challenge
 
-This is a coding challenge for an Android developer role at a company called Albert. The core functionality specified in the challenge has all been built and is working. Improvements could have definetly been made if there was more time.
+This is a coding challenge for an Android developer role at a company called Albert. All the functionality specified in the challenge has all been built and is working. Improvements could have definetly been made if there was more time.
 
 ## How to use
 

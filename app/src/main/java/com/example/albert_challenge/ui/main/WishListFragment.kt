@@ -9,14 +9,15 @@ import android.content.Context
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import android.widget.Toast
-import com.example.albert_challenge.BookInfo
 import com.example.albert_challenge.R
 import com.example.albert_challenge.RecyclerItemClickListener
-import com.example.albert_challenge.adapter.RecyclerAdapter
+import com.example.albert_challenge.adapter.WishListAdapter
 import com.example.albert_challenge.io.retrofit.ApiHandler
 import com.example.albert_challenge.model.JSONData
 import com.example.albert_challenge.realm.BookModel
+import com.example.albert_challenge.realm.BookRealmObject
 import io.realm.Realm
+import io.realm.RealmResults
 import kotlinx.android.synthetic.main.wish_list_fragment.view.*
 
 class WishListFragment: Fragment() {
@@ -41,29 +42,32 @@ class WishListFragment: Fragment() {
         val root = inflater.inflate(R.layout.wish_list_fragment, container, false)
 
         setupRecyclerView(root,fragmentContext)
-
-      /*  root.searchEditText.afterTextChanged {
-            //make API request to get booklist
-            apiHandler.getBookList(root.searchEditText.text.toString())
-            .observe(this, Observer<List<JSONData?>> {
-                //update recyclerview with booList data
-                updateRecyclerView(root,it,fragmentContext)
-            })
-        }*/
-
+        displayBooks(realm, root)
         return root
     }
 
-    fun updateRecyclerView(v:View, newBookList: List<JSONData?>?, context: Context) {
-        bookList = newBookList
-        v.recyclerView.adapter = RecyclerAdapter(bookList, context)
+
+    /*fun updateRecyclerView(v:View, context: Context, realm: Realm, bookModel: BookModel) {
+        Log.i("Realm", "Onchangelistener OK!")
+        var myList: RealmResults<BookRealmObject> = realm.where(BookRealmObject::class.java).findAll()
+        myList.addChangeListener(RealmChangeListener<RealmResults<BookRealmObject>> {
+            Log.i("Realm", "Database Updated")
+            v.recyclerView.adapter = WishListAdapter(bookModel.getbooks(realm), context)
+            v.recyclerView.invalidate()
+        })
+    }
+*/
+    fun updateRecyclerView2(v:View, context: Context, realm: Realm, book: BookRealmObject) {
+        Log.i("Books in Realm" , bookModel.getbooks(realm).toString())
+        v.recyclerView.adapter = WishListAdapter(book, context)
         v.recyclerView.invalidate()
+
     }
 
     fun setupRecyclerView(v:View, context: Context) {
         v.recyclerView.layoutManager = LinearLayoutManager(context)
         v.recyclerView.recycledViewPool.setMaxRecycledViews(0,0)
-        clickListner(v,fragmentContext)
+        clickListner(v,context)
 
     }
 
@@ -71,31 +75,30 @@ class WishListFragment: Fragment() {
         v.recyclerView.addOnItemTouchListener(RecyclerItemClickListener(context, v.recyclerView, object : RecyclerItemClickListener.OnItemClickListener {
 
             override fun onItemClick(view: View, position: Int) {
-                Log.i("WE MADE IT", bookList?.get(position).toString())
-                val bookInfoIntent = BookInfo.newIntent(context, bookList, position)
-                context.startActivity(bookInfoIntent)
+                //Log.i("WE MADE IT", bookList?.get(position).toString())
+                //TODO fix object that gets passed into the pop up view from the wish list
+                //val bookInfoIntent = BookInfo.newIntent(context, bookList, position)
+               // context.startActivity(bookInfoIntent)
             }
             override fun onItemLongClick(view: View?, position: Int) {
                 Toast.makeText(context, "Removed from wish list", Toast.LENGTH_SHORT).show()
-                deleteBook(bookList?.get(position)?.title!!)
+                //deleteBook(bookList, position)
 
             }
         }))
     }
 
-    fun displayBooks(realm: Realm) {
-        var data = ""
+    fun displayBooks(realm: Realm, v: View) {
         var results = bookModel.getbooks(realm)
-        results.forEach { result -> data += "$result \n --------------------------------------- \n"
-        }
-        //display.text = data
+        results.forEach{results -> updateRecyclerView2(v, fragmentContext, realm, results)}
+        //repeat(results.size) { updateRecyclerView2(v, fragmentContext, realm, results)}
     }
 
 
-    fun deleteBook(title: String){
-        bookModel.delBook(realm,title)
+    /*fun deleteBook(bookList: List<JSONData?>?, pos: Int){
+        bookModel.delBook(bookList,pos)
         //TODO update view
-    }
+    }*/
 
     companion object {
         /**
@@ -116,5 +119,6 @@ class WishListFragment: Fragment() {
                 }
             }
         }
+
     }
 }

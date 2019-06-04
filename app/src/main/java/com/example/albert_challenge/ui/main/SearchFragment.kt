@@ -15,11 +15,10 @@ import android.widget.Toast
 import com.example.albert_challenge.BookInfo
 import com.example.albert_challenge.R
 import com.example.albert_challenge.RecyclerItemClickListener
-import com.example.albert_challenge.adapter.RecyclerAdapter
+import com.example.albert_challenge.adapter.SearchListAdapter
 import com.example.albert_challenge.io.retrofit.ApiHandler
 import com.example.albert_challenge.model.JSONData
 import com.example.albert_challenge.realm.BookModel
-import com.example.albert_challenge.realm.BookRealmObject
 import io.realm.Realm
 import kotlinx.android.synthetic.main.wish_list_fragment.view.recyclerView
 import kotlinx.android.synthetic.main.search_fragment.view.*
@@ -30,12 +29,10 @@ class SearchFragment: Fragment() {
     var bookList: List<JSONData?>? = null
     var apiHandler: ApiHandler = ApiHandler()
     var bookModel = BookModel()
-    var realm : Realm? = null
+    var realm : Realm = Realm.getDefaultInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        realm = Realm.getDefaultInstance()
-
 
     }
 
@@ -58,12 +55,15 @@ class SearchFragment: Fragment() {
             })
         }
 
+        bookModel.start(realm)
+
+
         return root
     }
 
     fun updateRecyclerView(v:View, newBookList: List<JSONData?>?, context: Context) {
         bookList = newBookList
-        v.recyclerView.adapter = RecyclerAdapter(bookList, context)
+        v.recyclerView.adapter = SearchListAdapter(bookList, context)
         v.recyclerView.invalidate()
     }
 
@@ -85,6 +85,8 @@ class SearchFragment: Fragment() {
             override fun onItemLongClick(view: View?, position: Int) {
                 Toast.makeText(context, "Added to wish list", Toast.LENGTH_SHORT).show()
                 bookModel.addBook(bookList,position)
+                //WishListFragment.updateRecyclerView (root, fragmentContext)
+
             }
         }))
     }

@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import android.view.View
 import com.example.albert_challenge.*
-import com.example.albert_challenge.adapter.RecyclerAdapter
+import com.example.albert_challenge.adapter.SearchListAdapter
 import com.example.albert_challenge.model.JSONData
 import kotlinx.android.synthetic.main.wish_list_fragment.view.*
 
@@ -22,7 +22,7 @@ class SearchPageModel : ViewModel() {
 
      fun updateRecyclerView(v:View, newBookList: List<JSONData?>?, context: Context) {
         bookList = newBookList
-        v.recyclerView.adapter = RecyclerAdapter(bookList, context)
+        v.recyclerView.adapter = SearchListAdapter(bookList, context)
         v.recyclerView.invalidate()
     }
 

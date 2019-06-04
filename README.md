@@ -11,10 +11,10 @@ This is a coding challenge for android development role at a company called Albe
 
 ## Built With
 
-* [Kotlin] (https://kotlinlang.org/) - Main language
-* [Retrofit] (https://square.github.io/retrofit/)- HTTP client
-* [Realm] (https://realm.io/) - Database
-* [RxJava2] (https://github.com/ReactiveX/RxJava) - Java VM implementation of Reactive Extensions
+* [Kotlin](https://kotlinlang.org/) - Main language
+* [Retrofit](https://square.github.io/retrofit/)- HTTP client
+* [Realm](https://realm.io/) - Database
+* [RxJava2](https://github.com/ReactiveX/RxJava) - Java VM implementation of Reactive Extensions
 
 ## Issues 
 

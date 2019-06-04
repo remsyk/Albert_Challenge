@@ -13,7 +13,7 @@ import com.example.albert_challenge.realm.BookRealmObject
 import io.realm.RealmResults
 
 
-class BookInfo : AppCompatActivity() {
+class BookWebView : AppCompatActivity() {
 
     private lateinit var webView: WebView
 
@@ -23,9 +23,10 @@ class BookInfo : AppCompatActivity() {
         const val BASE_BOOK_URL = "https://openlibrary.org/"
         private var BOOK_URL = ""
 
+        //declares new intent and pass in variable for that intent with a crude constructor
         fun newIntent(context: Context, bookList: List<JSONData?>?, wishList: RealmResults<BookRealmObject>?, pos: Int): Intent {
-            val detailIntent = Intent(context, BookInfo::class.java)
-
+            val detailIntent = Intent(context, BookWebView::class.java)
+            //this intent will pull the needed book info from the cached api data or the realm data
             if(bookList != null) {
                 detailIntent.putExtra(BOOK_TITLE, bookList?.get(pos)?.title)
                 detailIntent.putExtra(BOOK_URL, bookList?.get(pos)?.seed?.get(1).toString())
@@ -36,7 +37,7 @@ class BookInfo : AppCompatActivity() {
             return detailIntent
         }
     }
-
+    //creates the new activity with the webview of the book
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         actionBar?.setDisplayHomeAsUpEnabled(true)
@@ -48,6 +49,7 @@ class BookInfo : AppCompatActivity() {
         setTitle(title)
 
         webView = findViewById(R.id.detail_web_view)
+        //generates a webview inside of the activity rather than in the browser
         webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 view?.loadUrl(url)
@@ -57,7 +59,7 @@ class BookInfo : AppCompatActivity() {
         webView.loadUrl(url)
     }
 
-    //TODO not the best solution to this issue, when not sure why I am unable to get back effectively
+    //handles back button being pressed to break out of the activity
     override fun onBackPressed() {
         super.onBackPressed()
         val intent = Intent(this, MainActivity::class.java)

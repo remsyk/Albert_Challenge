@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.albert_challenge.ui.main.BookInfo">
+        tools:context="com.example.albert_challenge.ui.main.BookWebView">
 
     <WebView
             android:id="@+id/detail_web_view"

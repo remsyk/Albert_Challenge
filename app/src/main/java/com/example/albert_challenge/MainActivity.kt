@@ -4,8 +4,7 @@ import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
-import com.example.albert_challenge.ui.main.SectionsPagerAdapter
-import io.realm.Realm
+import com.example.albert_challenge.adapter.SectionsPagerAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+        val sectionsPagerAdapter =
+            SectionsPagerAdapter(this, supportFragmentManager)
 
         val viewPager: ViewPager = findViewById(R.id.view_pager)
         viewPager.adapter = sectionsPagerAdapter
@@ -22,7 +22,3 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
     }
 }
-
-
-
-//TODO Documentation

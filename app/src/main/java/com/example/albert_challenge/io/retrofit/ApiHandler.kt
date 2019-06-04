@@ -24,6 +24,7 @@ class ApiHandler {
         }
     }
 
+    //makes search request with OpenLibrary API
     @SuppressLint("CheckResult")
     fun search(searchRequest: String) {
         openLibraryService.search(searchRequest)
@@ -35,6 +36,7 @@ class ApiHandler {
         )
     }
 
+    //passes in the user input string into the search method and returns a list of books from the API
     fun getBookList(request: String): LiveData<List<JSONData?>> {
         this.request = request
         search(request)

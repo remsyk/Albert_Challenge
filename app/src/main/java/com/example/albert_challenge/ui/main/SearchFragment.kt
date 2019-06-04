@@ -30,10 +30,6 @@ class SearchFragment: Fragment() {
     var bookModel = BookModel()
     var realm : Realm = Realm.getDefaultInstance()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onAttach(context: Context){
         super.onAttach(context)
@@ -44,21 +40,22 @@ class SearchFragment: Fragment() {
         val root = inflater.inflate(R.layout.search_fragment, container, false)
 
         setupRecyclerView(root,fragmentContext)
-
+        //retrieves user input as it is being typed in
         root.searchEditText.afterTextChanged {
-            //make API request to get booklist
+            //make API request to get booklist using LiveData
             apiHandler.getBookList(root.searchEditText.text.toString())
             .observe(this, Observer<List<JSONData?>> {
-                //update recyclerview with booList data
+                //update recyclerView with booList data
                 updateRecyclerView(root,it,fragmentContext)
             })
         }
 
         return root
     }
-
+    //update the recyclerView
     fun updateRecyclerView(v:View, newBookList: List<JSONData?>?, context: Context) {
         bookList = newBookList
+        //attaches adapter to view to load information into layout
         v.recyclerView.adapter = SearchListAdapter(bookList, context)
         v.recyclerView.invalidate()
     }
@@ -72,16 +69,17 @@ class SearchFragment: Fragment() {
 
     fun clickListner(v:View, context: Context){
         v.recyclerView.addOnItemTouchListener(RecyclerItemClickListener(context, v.recyclerView, object : RecyclerItemClickListener.OnItemClickListener {
-
+            //single click to open webView intent
             override fun onItemClick(view: View, position: Int) {
-                //Log.i("WE MADE IT", bookList?.get(position).toString())
-                val bookInfoIntent = BookInfo.newIntent(context, bookList,null, position)
+                val bookInfoIntent = BookWebView.newIntent(context, bookList,null, position)
                 context.startActivity(bookInfoIntent)
             }
+            //long press to add book to realm database
             override fun onItemLongClick(view: View?, position: Int) {
                 Toast.makeText(context, bookList?.get(position)?.title.toString() + " added", Toast.LENGTH_SHORT).show()
                 bookModel.addBook(bookList,position)
                 var wishListAdapter  = WishListAdapter(bookModel.getbooks(realm), context)
+                //updates wishlist view
                 wishListAdapter.update()
             }
         }))

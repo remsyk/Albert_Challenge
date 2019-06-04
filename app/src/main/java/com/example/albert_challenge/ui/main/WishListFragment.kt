@@ -1,6 +1,5 @@
 package com.example.albert_challenge.ui.main
 
-import android.arch.lifecycle.Observer
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -36,15 +35,16 @@ class WishListFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.wish_list_fragment, container, false)
         setupRecyclerView(root,fragmentContext,bookModel.getbooks(realm))
-        updateRecyclerView2(root, fragmentContext, realm, bookModel.getbooks(realm))
+        updateRecyclerView(root, fragmentContext, realm, bookModel.getbooks(realm))
         return root
     }
 
-
-    fun updateRecyclerView2(v:View?, context: Context, realm: Realm, wishList: RealmResults<BookRealmObject>?) {
+    //updates
+    fun updateRecyclerView(v:View?, context: Context, realm: Realm, wishList: RealmResults<BookRealmObject>?) {
         Log.i("Books in Realm" , wishList.toString())
         var wishListAdapter  = WishListAdapter(wishList, context)
         v?.wishrecyclerView?.adapter = wishListAdapter
+        //updates adapter
         wishListAdapter.update()
     }
 
@@ -57,18 +57,17 @@ class WishListFragment: Fragment() {
 
     fun clickListner(v:View, context: Context, wishList: RealmResults<BookRealmObject>){
         v.wishrecyclerView.addOnItemTouchListener(RecyclerItemClickListener(context, v.wishrecyclerView, object : RecyclerItemClickListener.OnItemClickListener {
-
+            //single press to open webview of the book
             override fun onItemClick(view: View, position: Int) {
-                Log.i("WE MADE IT", wishList?.get(position).toString())
-                val bookInfoIntent = BookInfo.newIntent(context, null, wishList, position)
+                val bookInfoIntent = BookWebView.newIntent(context, null, wishList, position)
                 context.startActivity(bookInfoIntent)
             }
+            //longpress to delete item from wishlist
             override fun onItemLongClick(view: View?, position: Int) {
                 Toast.makeText(context, wishList.get(position)?.title.toString()+" removed", Toast.LENGTH_SHORT).show()
-                Log.i("Updated After Delete" , wishList.toString())
                 val newBooklist = bookModel.delBook(realm, wishList.get(position))
-                updateRecyclerView2(view, fragmentContext, realm, newBooklist)
-
+                //updates recyclerview wishlist
+                updateRecyclerView(view, fragmentContext, realm, newBooklist)
             }
         }))
     }

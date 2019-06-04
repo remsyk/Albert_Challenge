@@ -10,7 +10,7 @@ class RetrofitFactory {
     companion object {
 
         private const val TAG: String = "RetrofitFactory"
-
+        //build retrofit to make request
         fun create(): OpenLibraryService {
             Log.i(TAG, "create: ")
             val retrofit = retrofit2.Retrofit.Builder()
@@ -21,7 +21,7 @@ class RetrofitFactory {
                     .build()
             return retrofit.create(OpenLibraryService::class.java)
         }
-
+        //leverage OKHttpClient to reuse threads and reduce latency
         private fun getOkHttpClient(): OkHttpClient {
             val httpLoggingInterceptor = HttpLoggingInterceptor().apply {
                 this.level = HttpLoggingInterceptor.Level.BODY

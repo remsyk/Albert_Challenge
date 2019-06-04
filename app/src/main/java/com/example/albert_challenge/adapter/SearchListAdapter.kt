@@ -9,7 +9,7 @@ import com.example.albert_challenge.R
 import com.example.albert_challenge.model.JSONData
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_item.view.*
-
+//Passes in bookList from API call with OpenLibrary
 class SearchListAdapter(private val bookList: List<JSONData?>?, val context: Context) : RecyclerView.Adapter<SearchListAdapter.BookViewHolder>() {
 
     private var imageURL = ""
@@ -29,13 +29,17 @@ class SearchListAdapter(private val bookList: List<JSONData?>?, val context: Con
     }
 
     override fun onBindViewHolder(viewHolder: BookViewHolder, pos: Int) {
+        //constructs url string for book image
         imageURL = imageUrlBase + bookList?.get(pos)?.coverI + "-L.jpg"
+        //binds book image to the recycler view
         Picasso.with(context).load(imageURL).into(viewHolder.bookImageView)
+        //binds book title to the recycler view
         viewHolder.titleTextView.text = bookList?.get(pos)?.title
+        //binds book author to the recycler view
         viewHolder.authorTextView.text = bookList?.get(pos)?.authorName?.get(0)
     }
 
-    // view holder
+    // view holder that gets called in onCreateViewHolder
     class BookViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val bookImageView = view.book_image!!
         val titleTextView = view.book_title!!

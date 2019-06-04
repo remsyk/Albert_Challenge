@@ -3,7 +3,6 @@ package com.example.albert_challenge.model
 import com.google.gson.annotations.SerializedName
 
 data class JSONData (
-
     @SerializedName("author_alternative_name")
     var authorAlternativeName: List<String?>?,
     @SerializedName("author_key")
